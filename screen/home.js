@@ -36,7 +36,6 @@ function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
-      <Text style={globalStyles.headingText}> Reviews </Text>
       <FlatList
         data={reviews}
         renderItem={({ item }) => (
