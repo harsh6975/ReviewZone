@@ -6,10 +6,19 @@ function ReviewDetails({ navigation }) {
   const handlePress = () => {
     navigation.goBack();
   };
-  
+
   return (
     <View style={globalStyles.container}>
-      <Text style={globalStyles.headingText}> Review Screen </Text>
+      <Text style={globalStyles.headingText}>
+        {navigation.getParam("title")}
+      </Text>
+      <Text style={globalStyles.headingText}>
+        {navigation.getParam("body")}
+      </Text>
+      <Text style={globalStyles.headingText}>
+        Rating: {navigation.getParam("rating")}
+      </Text>
+
       <Button title="Go back to home screen" onPress={handlePress} />
     </View>
   );
