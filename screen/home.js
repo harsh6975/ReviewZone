@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { globalStyles } from "../styles/globalStyles";
+import Card from "../shared/card";
 
 function Home({ navigation }) {
   const [reviews, setReviews] = useState([
@@ -40,7 +41,9 @@ function Home({ navigation }) {
         data={reviews}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handlePress(item)}>
-            <Text>{item.title} aasfas</Text>
+            <Card>
+              <Text>{item.title} aasfas</Text>
+            </Card>
           </TouchableOpacity>
         )}
       />
