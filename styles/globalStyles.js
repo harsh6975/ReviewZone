@@ -10,5 +10,12 @@ export const globalStyles = StyleSheet.create({
     fontSize: 18,
     color: "#330000",
   },
-  
+  input: {
+    borderWidth: 1,
+    borderColor: "#ddd",
+    padding: 10,
+    fontSize: 18,
+    borderRadius: 6,
+    marginBottom: 12,
+  },
 });
