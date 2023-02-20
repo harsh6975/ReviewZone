@@ -25,9 +25,7 @@ function ReviewDetails({ navigation }) {
         <Text style={globalStyles.headingText}>
           {navigation.getParam("title")}
         </Text>
-        <Text style={globalStyles.headingText}>
-          {navigation.getParam("body")}
-        </Text>
+        <Text style={styles.body}>{navigation.getParam("body")}</Text>
         <View style={styles.rating}>
           <Text style={globalStyles.headingText}>Rating: </Text>
           <Image source={images.ratings[rating]} />
@@ -38,11 +36,16 @@ function ReviewDetails({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  body: {
+    fontSize: 14,
+    color: "#006633",
+    marginTop: 10,
+  },
   rating: {
     flexDirection: "row",
     justifyContent: "center",
-    paddingTop: 16,
-    marginTop: 16,
+    paddingTop: 10,
+    marginTop: 10,
     borderTopWidth: 1,
     borderTopColor: "#eee",
   },

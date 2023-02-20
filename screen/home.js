@@ -42,7 +42,7 @@ function Home({ navigation }) {
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handlePress(item)}>
             <Card>
-              <Text>{item.title} aasfas</Text>
+              <Text style={styles.title}>{item.title}</Text>
             </Card>
           </TouchableOpacity>
         )}
@@ -51,6 +51,12 @@ function Home({ navigation }) {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  title: {
+    color: "#330000",
+    fontWeight: "600",
+    fontSize: 16,
+  },
+});
 
 export default Home;

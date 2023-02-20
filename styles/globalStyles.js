@@ -8,5 +8,7 @@ export const globalStyles = StyleSheet.create({
   headingText: {
     fontFamily: "lato-bold",
     fontSize: 18,
+    color: "#330000",
   },
+  
 });
